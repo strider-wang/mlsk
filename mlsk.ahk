@@ -240,29 +240,231 @@ mlsk_exec_call_everything()
 }
 
 ;; key combination definition
-^!e::
-{
-	mlsk_exec_call_everything()
-	WinMaximize
-	
-	Return
-}
+;;Ctrl+%c%
+^a:: mlsk_table_scheduler("ctrl+a"), Return
+^b:: mlsk_table_scheduler("ctrl+b"), Return
+^c:: mlsk_table_scheduler("ctrl+c"), Return
+^d:: mlsk_table_scheduler("ctrl+d"), Return
+^e:: mlsk_table_scheduler("ctrl+e"), Return
+^f:: mlsk_table_scheduler("ctrl+f"), Return
+^g:: mlsk_table_scheduler("ctrl+g"), Return
+^h:: mlsk_table_scheduler("ctrl+h"), Return
+^i:: mlsk_table_scheduler("ctrl+i"), Return
+^j:: mlsk_table_scheduler("ctrl+j"), Return
+^k:: mlsk_table_scheduler("ctrl+k"), Return
+^l:: mlsk_table_scheduler("ctrl+l"), Return
+^m:: mlsk_table_scheduler("ctrl+m"), Return
+^n:: mlsk_table_scheduler("ctrl+n"), Return
+^o:: mlsk_table_scheduler("ctrl+o"), Return
+^p:: mlsk_table_scheduler("ctrl+p"), Return
+^q:: mlsk_table_scheduler("ctrl+q"), Return
+^r:: mlsk_table_scheduler("ctrl+r"), Return
+^s:: mlsk_table_scheduler("ctrl+s"), Return
+^t:: mlsk_table_scheduler("ctrl+t"), Return
+^u:: mlsk_table_scheduler("ctrl+u"), Return
+^v:: mlsk_table_scheduler("ctrl+v"), Return
+^w:: mlsk_table_scheduler("ctrl+w"), Return
+^x:: mlsk_table_scheduler("ctrl+x"), Return
+^y:: mlsk_table_scheduler("ctrl+y"), Return
+^z:: mlsk_table_scheduler("ctrl+z"), Return
+^0:: mlsk_table_scheduler("ctrl+0"), Return
+^1:: mlsk_table_scheduler("ctrl+1"), Return
+^2:: mlsk_table_scheduler("ctrl+2"), Return
+^3:: mlsk_table_scheduler("ctrl+3"), Return
+^4:: mlsk_table_scheduler("ctrl+4"), Return
+^5:: mlsk_table_scheduler("ctrl+5"), Return
+^6:: mlsk_table_scheduler("ctrl+6"), Return
+^7:: mlsk_table_scheduler("ctrl+7"), Return
+^8:: mlsk_table_scheduler("ctrl+8"), Return
+^9:: mlsk_table_scheduler("ctrl+9"), Return
 
-^!t::
-{
-	mlsk_util_function_call("mlsk_util_dummy")
-	MsgBox "Ctrl+alt+t"
-	Return
-}
+;;Alt+%c%
+!a:: mlsk_table_scheduler("alt+a"), Return
+!b:: mlsk_table_scheduler("alt+b"), Return
+!c:: mlsk_table_scheduler("alt+c"), Return
+!d:: mlsk_table_scheduler("alt+d"), Return
+!e:: mlsk_table_scheduler("alt+e"), Return
+!f:: mlsk_table_scheduler("alt+f"), Return
+!g:: mlsk_table_scheduler("alt+g"), Return
+!h:: mlsk_table_scheduler("alt+h"), Return
+!i:: mlsk_table_scheduler("alt+i"), Return
+!j:: mlsk_table_scheduler("alt+j"), Return
+!k:: mlsk_table_scheduler("alt+k"), Return
+!l:: mlsk_table_scheduler("alt+l"), Return
+!m:: mlsk_table_scheduler("alt+m"), Return
+!n:: mlsk_table_scheduler("alt+n"), Return
+!o:: mlsk_table_scheduler("alt+o"), Return
+!p:: mlsk_table_scheduler("alt+p"), Return
+!q:: mlsk_table_scheduler("alt+q"), Return
+!r:: mlsk_table_scheduler("alt+r"), Return
+!s:: mlsk_table_scheduler("alt+s"), Return
+!t:: mlsk_table_scheduler("alt+t"), Return
+!u:: mlsk_table_scheduler("alt+u"), Return
+!v:: mlsk_table_scheduler("alt+v"), Return
+!w:: mlsk_table_scheduler("alt+w"), Return
+!x:: mlsk_table_scheduler("alt+x"), Return
+!y:: mlsk_table_scheduler("alt+y"), Return
+!z:: mlsk_table_scheduler("alt+z"), Return
+!0:: mlsk_table_scheduler("alt+0"), Return
+!1:: mlsk_table_scheduler("alt+1"), Return
+!2:: mlsk_table_scheduler("alt+2"), Return
+!3:: mlsk_table_scheduler("alt+3"), Return
+!4:: mlsk_table_scheduler("alt+4"), Return
+!5:: mlsk_table_scheduler("alt+5"), Return
+!6:: mlsk_table_scheduler("alt+6"), Return
+!7:: mlsk_table_scheduler("alt+7"), Return
+!8:: mlsk_table_scheduler("alt+8"), Return
+!9:: mlsk_table_scheduler("alt+9"), Return
 
-^!g::
-{
-	mlsk_table_scheduler("ctrl+alt+g")
-	Return
-}
+;;Shift+%c
++a:: mlsk_table_scheduler("shift+a"), Return
++b:: mlsk_table_scheduler("shift+b"), Return
++c:: mlsk_table_scheduler("shift+c"), Return
++d:: mlsk_table_scheduler("shift+d"), Return
++e:: mlsk_table_scheduler("shift+e"), Return
++f:: mlsk_table_scheduler("shift+f"), Return
++g:: mlsk_table_scheduler("shift+g"), Return
++h:: mlsk_table_scheduler("shift+h"), Return
++i:: mlsk_table_scheduler("shift+i"), Return
++j:: mlsk_table_scheduler("shift+j"), Return
++k:: mlsk_table_scheduler("shift+k"), Return
++l:: mlsk_table_scheduler("shift+l"), Return
++m:: mlsk_table_scheduler("shift+m"), Return
++n:: mlsk_table_scheduler("shift+n"), Return
++o:: mlsk_table_scheduler("shift+o"), Return
++p:: mlsk_table_scheduler("shift+p"), Return
++q:: mlsk_table_scheduler("shift+q"), Return
++r:: mlsk_table_scheduler("shift+r"), Return
++s:: mlsk_table_scheduler("shift+s"), Return
++t:: mlsk_table_scheduler("shift+t"), Return
++u:: mlsk_table_scheduler("shift+u"), Return
++v:: mlsk_table_scheduler("shift+v"), Return
++w:: mlsk_table_scheduler("shift+w"), Return
++x:: mlsk_table_scheduler("shift+x"), Return
++y:: mlsk_table_scheduler("shift+y"), Return
++z:: mlsk_table_scheduler("shift+z"), Return
++0:: mlsk_table_scheduler("shift+0"), Return
++1:: mlsk_table_scheduler("shift+1"), Return
++2:: mlsk_table_scheduler("shift+2"), Return
++3:: mlsk_table_scheduler("shift+3"), Return
++4:: mlsk_table_scheduler("shift+4"), Return
++5:: mlsk_table_scheduler("shift+5"), Return
++6:: mlsk_table_scheduler("shift+6"), Return
++7:: mlsk_table_scheduler("shift+7"), Return
++8:: mlsk_table_scheduler("shift+8"), Return
++9:: mlsk_table_scheduler("shift+9"), Return
 
-^!w::
-{
-	mlsk_table_scheduler("ctrl+alt+w")
-	Return
-}
+;;Ctrl+Alt+%c%
+^!a:: mlsk_table_scheduler("ctrl+alt+a"), Return
+^!b:: mlsk_table_scheduler("ctrl+alt+b"), Return
+^!c:: mlsk_table_scheduler("ctrl+alt+c"), Return
+^!d:: mlsk_table_scheduler("ctrl+alt+d"), Return
+^!e:: mlsk_table_scheduler("ctrl+alt+e"), Return
+^!f:: mlsk_table_scheduler("ctrl+alt+f"), Return
+^!g:: mlsk_table_scheduler("ctrl+alt+g"), Return
+^!h:: mlsk_table_scheduler("ctrl+alt+h"), Return
+^!i:: mlsk_table_scheduler("ctrl+alt+i"), Return
+^!j:: mlsk_table_scheduler("ctrl+alt+j"), Return
+^!k:: mlsk_table_scheduler("ctrl+alt+k"), Return
+^!l:: mlsk_table_scheduler("ctrl+alt+l"), Return
+^!m:: mlsk_table_scheduler("ctrl+alt+m"), Return
+^!n:: mlsk_table_scheduler("ctrl+alt+n"), Return
+^!o:: mlsk_table_scheduler("ctrl+alt+o"), Return
+^!p:: mlsk_table_scheduler("ctrl+alt+p"), Return
+^!q:: mlsk_table_scheduler("ctrl+alt+q"), Return
+^!r:: mlsk_table_scheduler("ctrl+alt+r"), Return
+^!s:: mlsk_table_scheduler("ctrl+alt+s"), Return
+^!t:: mlsk_table_scheduler("ctrl+alt+t"), Return
+^!u:: mlsk_table_scheduler("ctrl+alt+u"), Return
+^!v:: mlsk_table_scheduler("ctrl+alt+v"), Return
+^!w:: mlsk_table_scheduler("ctrl+alt+w"), Return
+^!x:: mlsk_table_scheduler("ctrl+alt+x"), Return
+^!y:: mlsk_table_scheduler("ctrl+alt+y"), Return
+^!z:: mlsk_table_scheduler("ctrl+alt+z"), Return
+^!0:: mlsk_table_scheduler("ctrl+alt+0"), Return
+^!1:: mlsk_table_scheduler("ctrl+alt+1"), Return
+^!2:: mlsk_table_scheduler("ctrl+alt+2"), Return
+^!3:: mlsk_table_scheduler("ctrl+alt+3"), Return
+^!4:: mlsk_table_scheduler("ctrl+alt+4"), Return
+^!5:: mlsk_table_scheduler("ctrl+alt+5"), Return
+^!6:: mlsk_table_scheduler("ctrl+alt+6"), Return
+^!7:: mlsk_table_scheduler("ctrl+alt+7"), Return
+^!8:: mlsk_table_scheduler("ctrl+alt+8"), Return
+^!9:: mlsk_table_scheduler("ctrl+alt+9"), Return
+
+;;Ctrl+Shift+%c%
+^+a:: mlsk_table_scheduler("ctrl+shift+a"), Return
+^+b:: mlsk_table_scheduler("ctrl+shift+b"), Return
+^+c:: mlsk_table_scheduler("ctrl+shift+c"), Return
+^+d:: mlsk_table_scheduler("ctrl+shift+d"), Return
+^+e:: mlsk_table_scheduler("ctrl+shift+e"), Return
+^+f:: mlsk_table_scheduler("ctrl+shift+f"), Return
+^+g:: mlsk_table_scheduler("ctrl+shift+g"), Return
+^+h:: mlsk_table_scheduler("ctrl+shift+h"), Return
+^+i:: mlsk_table_scheduler("ctrl+shift+i"), Return
+^+j:: mlsk_table_scheduler("ctrl+shift+j"), Return
+^+k:: mlsk_table_scheduler("ctrl+shift+k"), Return
+^+l:: mlsk_table_scheduler("ctrl+shift+l"), Return
+^+m:: mlsk_table_scheduler("ctrl+shift+m"), Return
+^+n:: mlsk_table_scheduler("ctrl+shift+n"), Return
+^+o:: mlsk_table_scheduler("ctrl+shift+o"), Return
+^+p:: mlsk_table_scheduler("ctrl+shift+p"), Return
+^+q:: mlsk_table_scheduler("ctrl+shift+q"), Return
+^+r:: mlsk_table_scheduler("ctrl+shift+r"), Return
+^+s:: mlsk_table_scheduler("ctrl+shift+s"), Return
+^+t:: mlsk_table_scheduler("ctrl+shift+t"), Return
+^+u:: mlsk_table_scheduler("ctrl+shift+u"), Return
+^+v:: mlsk_table_scheduler("ctrl+shift+v"), Return
+^+w:: mlsk_table_scheduler("ctrl+shift+w"), Return
+^+x:: mlsk_table_scheduler("ctrl+shift+x"), Return
+^+y:: mlsk_table_scheduler("ctrl+shift+y"), Return
+^+z:: mlsk_table_scheduler("ctrl+shift+z"), Return
+^+0:: mlsk_table_scheduler("ctrl+shift+0"), Return
+^+1:: mlsk_table_scheduler("ctrl+shift+1"), Return
+^+2:: mlsk_table_scheduler("ctrl+shift+2"), Return
+^+3:: mlsk_table_scheduler("ctrl+shift+3"), Return
+^+4:: mlsk_table_scheduler("ctrl+shift+4"), Return
+^+5:: mlsk_table_scheduler("ctrl+shift+5"), Return
+^+6:: mlsk_table_scheduler("ctrl+shift+6"), Return
+^+7:: mlsk_table_scheduler("ctrl+shift+7"), Return
+^+8:: mlsk_table_scheduler("ctrl+shift+8"), Return
+^+9:: mlsk_table_scheduler("ctrl+shift+9"), Return
+
+;;Alt+Shift+%c%
+!+a:: mlsk_table_scheduler("alt+shift+a"), Return
+!+b:: mlsk_table_scheduler("alt+shift+b"), Return
+!+c:: mlsk_table_scheduler("alt+shift+c"), Return
+!+d:: mlsk_table_scheduler("alt+shift+d"), Return
+!+e:: mlsk_table_scheduler("alt+shift+e"), Return
+!+f:: mlsk_table_scheduler("alt+shift+f"), Return
+!+g:: mlsk_table_scheduler("alt+shift+g"), Return
+!+h:: mlsk_table_scheduler("alt+shift+h"), Return
+!+i:: mlsk_table_scheduler("alt+shift+i"), Return
+!+j:: mlsk_table_scheduler("alt+shift+j"), Return
+!+k:: mlsk_table_scheduler("alt+shift+k"), Return
+!+l:: mlsk_table_scheduler("alt+shift+l"), Return
+!+m:: mlsk_table_scheduler("alt+shift+m"), Return
+!+n:: mlsk_table_scheduler("alt+shift+n"), Return
+!+o:: mlsk_table_scheduler("alt+shift+o"), Return
+!+p:: mlsk_table_scheduler("alt+shift+p"), Return
+!+q:: mlsk_table_scheduler("alt+shift+q"), Return
+!+r:: mlsk_table_scheduler("alt+shift+r"), Return
+!+s:: mlsk_table_scheduler("alt+shift+s"), Return
+!+t:: mlsk_table_scheduler("alt+shift+t"), Return
+!+u:: mlsk_table_scheduler("alt+shift+u"), Return
+!+v:: mlsk_table_scheduler("alt+shift+v"), Return
+!+w:: mlsk_table_scheduler("alt+shift+w"), Return
+!+x:: mlsk_table_scheduler("alt+shift+x"), Return
+!+y:: mlsk_table_scheduler("alt+shift+y"), Return
+!+z:: mlsk_table_scheduler("alt+shift+z"), Return
+!+0:: mlsk_table_scheduler("alt+shift+0"), Return
+!+1:: mlsk_table_scheduler("alt+shift+1"), Return
+!+2:: mlsk_table_scheduler("alt+shift+2"), Return
+!+3:: mlsk_table_scheduler("alt+shift+3"), Return
+!+4:: mlsk_table_scheduler("alt+shift+4"), Return
+!+5:: mlsk_table_scheduler("alt+shift+5"), Return
+!+6:: mlsk_table_scheduler("alt+shift+6"), Return
+!+7:: mlsk_table_scheduler("alt+shift+7"), Return
+!+8:: mlsk_table_scheduler("alt+shift+8"), Return
+!+9:: mlsk_table_scheduler("alt+shift+9"), Return
+

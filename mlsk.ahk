@@ -67,7 +67,7 @@ mlsk_util_dummy()
 
 mlsk_util_log(log_str)
 {
-    if(1)
+    if(0)
     {
         MsgBox % log_str
         mlsk_util_show_tip(log_str, 3000)
@@ -219,11 +219,17 @@ mlsk_table_scheduler(keys_name, keys_combo)
     
     if(mlsk_table_call(mlsk_ctrl_table, keys_name) == 0)
     {
-        mlsk_util_log("key not found in control table")
+        mlsk_util_log((keys_combo)": key not found in control table")
         
-        Send % keys_combo
         act_exec_table := mlsk_ctrl_table.act_exec_table
-        mlsk_table_call(act_exec_table, keys_name)
+        if(mlsk_table_call(act_exec_table, keys_name) == 0)
+        {
+            mlsk_util_log((keys_combo)": key not found in execute table, will resend it as it is")
+
+            Suspend, On
+            Send % keys_combo
+            Suspend, Off
+        }
     }
     else
     {
